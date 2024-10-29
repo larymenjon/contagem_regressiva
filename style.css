@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Barlow Condensed, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./img/fundo-dourado-de-natal_1048-6944.avif") center
+    center/cover no-repeat;
+  filter: blur(8px); /* Aplica blur apenas na imagem de fundo */
+  z-index: -1; /* Coloca o fundo atrás do relógio */
+}
+
+.relogio-container {
+  position: relative;
+  text-align: center;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.85
+  ); /* Fundo semi-transparente para destacar o relógio */
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 700px;
+  z-index: 1; /* Garante que o relógio fique acima do fundo */
+}
+
+#data {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hora-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.bloco {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #333;
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 10px;
+  margin: 0 8px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pontos {
+  font-size: 4.5rem;
+  color: #333;
+}
+
+#dia-semana {
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 15px;
+}
+
+#contagem-regressiva {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 20px;
+  font-weight: bold;
+}
